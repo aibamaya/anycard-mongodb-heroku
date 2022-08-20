@@ -4,9 +4,9 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
-const URI = process.env.MONGODB_URI || 'mongodb://localhost/database';
-const PORT = process.env.PORT || 5000;
-const DB_NAME = process.env.DB_NAME
+const URI = process.env.MONGODB_URI;
+const PORT = process.env.PORT ;
+const DB_NAME = process.env.DB_NAME;
 
 // middleware body-parser
 app.use(bodyParser.urlencoded({extended: false}));
